@@ -1,0 +1,23 @@
+meta {
+  name: create_account
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type":"signup",
+      "data":{
+          "name": "{{$randomFullName}}",
+          "email": "{{$randomEmail}}",
+          "mobile_no": "812872299",
+          "password":"admin@123"
+      }
+  }
+}

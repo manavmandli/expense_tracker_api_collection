@@ -1,0 +1,21 @@
+meta {
+  name: update_transaction
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type": "update_transaction",
+      "data": {
+          "category_name": "canera",
+          "category_type": "Expense"
+      }
+  }
+}

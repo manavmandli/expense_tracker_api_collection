@@ -1,0 +1,24 @@
+meta {
+  name: create_user_account
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type": "create_user_account",
+      "data": {
+          "account_type": "Bank",
+          "account_name": "test account",
+          "opening_balance": 100,
+          "receivable": 0,
+          "payable": 1
+      }
+  }
+}

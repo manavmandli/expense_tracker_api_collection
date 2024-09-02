@@ -1,0 +1,21 @@
+meta {
+  name: update_saving_goals
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type": "update_saving_goals",
+      "data": {
+          "category_name": "canera",
+          "category_type": "Expense"
+      }
+  }
+}

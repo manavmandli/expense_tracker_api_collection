@@ -1,0 +1,17 @@
+meta {
+  name: get_user_accounts
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type":"get_user_accounts"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: create_budget
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type": "create_budget",
+      "data": {
+          "category_name": "canera",
+          "category_type": "Expense"
+      }
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: create_transfer_transaction
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type": "create_transfer_transaction",
+      "data": {
+          "category_name": "canera",
+          "category_type": "Expense"
+      }
+  }
+}

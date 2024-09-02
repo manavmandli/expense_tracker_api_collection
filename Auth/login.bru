@@ -1,0 +1,21 @@
+meta {
+  name: login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type":"login",
+      "data":{
+          "usr":"manav@nesscale.com",
+          "pwd":"Manav@1212"
+      }
+  }
+}
