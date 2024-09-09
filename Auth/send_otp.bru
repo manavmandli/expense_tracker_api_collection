@@ -1,7 +1,7 @@
 meta {
-  name: login
+  name: send_otp
   type: http
-  seq: 1
+  seq: 3
 }
 
 post {
@@ -12,10 +12,9 @@ post {
 
 body:json {
   {
-      "type":"login",
+      "type":"send_otp",
       "data":{
-          "usr":"manav@nesscale.com",
-          "pwd":"ram@1212"
+         "mobile_no":"9033842101"
       }
   }
 }

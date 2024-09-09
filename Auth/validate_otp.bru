@@ -1,0 +1,22 @@
+meta {
+  name: validate_otp
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "type":"validate_otp",
+      "data":{
+          "mobile_no":"9033842101",
+          "otp":"123456",
+          "new_password":"ram@1212"
+      }
+  }
+}
