@@ -12,10 +12,34 @@ post {
 
 body:json {
   {
-      "type": "create_transaction",
-      "data": {
-          "category_name": "canera",
-          "category_type": "Expense"
-      }
+    "type": "create_transaction",
+    "data": {
+      "amount": 650,
+      "transaction_type": "Expense",
+      "category": "canera",
+      "account": "24-AC-00009",
+      "date": "2024-09-09",
+      "location": "New York",
+      "description": "Office supplies purchase",
+      "recurring_transaction": 1,
+      "interval":"Daily",
+      "recurring_date": "",
+      "recurring_time": "10:00"
+    }
   }
+}
+
+body:multipart-form {
+  type: create_transaction
+  amount: 650
+  transaction_type: Expense
+  category: canera
+  account: 24-AC-00009
+  date: 2024-09-09
+  location: New York
+  description: Office supplies purchase
+  recurring_transaction: 0
+  interval: 
+  recurring_date: 
+  recurring_time: 
 }
