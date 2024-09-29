@@ -1,0 +1,22 @@
+meta {
+  name: update_user_account
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "update_user_account",
+    "data": {
+      "account":"24-AC-00052",
+      "account_type": "Bank",
+      "account_name": "test account"
+    }
+  }
+}
