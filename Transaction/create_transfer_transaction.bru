@@ -12,10 +12,19 @@ post {
 
 body:json {
   {
-      "type": "create_transfer_transaction",
-      "data": {
-          "category_name": "canera",
-          "category_type": "Expense"
-      }
+    "type": "create_transfer_transaction",
+    "data": {
+      "amount": 500,
+      "transfer_type": "Pay",
+      "account_from": "24-AC-00052",
+      "account_to": "24-AC-00051",
+      "date": "2024-09-09",
+      "location": "New York",
+      "description": "Office supplies purchase",
+      "recurring_transaction": 1,
+      "interval": "Daily",
+      "recurring_date": "",
+      "recurring_time": "10:00"
+    }
   }
 }
